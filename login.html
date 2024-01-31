@@ -228,5 +228,33 @@
 			}
 
 			</script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form[id="registerForm"]');
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+  
+      // Submit the form data using Fetch API
+      fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      })
+        .then((response) => {
+          // Handle successful submission
+          console.log('Form submitted successfully:', response);
+          // You can redirect the user or show a success message here
+        })
+        .catch((error) => {
+          // Handle submission error
+          console.error('Form submission error:', error);
+          // You can show an error message to the user here
+        });
+    });
+  });
+			</script>
 		</body>
 </html>

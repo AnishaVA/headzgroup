@@ -11,25 +11,114 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Add your custom CSS styles and media queries here */
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+  
+      .navbar {
+        background-color: #343a40; /* Dark background color for navbar */
+      }
+  
+      .image-container {
+        max-width: 100%; /* Ensure the image container does not exceed the viewport width */
+        height: auto;
+        overflow: hidden;
+      }
+  
+      #top-bar {
+        padding: 10px 0;
+      }
+  
+      .box {
+        padding: 20px;
+      }
+  
+      .section-content {
+        text-align: center;
+      }
+  
+      @media (min-width: 768px) {
+        /* Apply styles for screens larger than 768px width */
+        .navbar {
+          padding: 15px 0;
+        }
+  
+        .box {
+          padding: 40px;
+        }
+      }
+    </style>
   </head>
   
   <body>
+    <div class="image-container">
+      <img class="image-item" src="images/welcome_image.jpg" alt="welcome to headz group" />
+    </div>
+    <nav id="top-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="logo" href="https://www.headzgroup.com/" target="_parent" id="hs-link-widget_1591726593135_" style="border-width:0px;border:0px;">
+        <img src="images/logo.png" class="hs-image-widget " style="width:100px;border-width:0px;border:0px;" width="200" alt="Logo_Headz" title="logo"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourExpertise">Our Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+        </ul>
+        <div class="buttons">
+          <a href="login.html">
+          <button id="login-button">Sign Up</button>
+        </a>
+      </div>
+    </div>
+</nav>
+    <div class="box">
+      <section id="welcome" class="section">
+        <div class="section-content container container-centered">
+          <div class="row">
+            <div class="col-md-6">
+              <h2><br>Welcome to <strong>Headz Group</strong></h2>
+              <p class="lead text-nor">At Headz Group, we combine our passion for people with the power of today's intelligent systems to create an innovative human-centric approach in providing HR Services, Recruiting Solutions, and Manpower Solutions. Specializing in Engineering & Construction, Hospitality, Health Care, Oil & Gas, Marine, Aviation, Banking, and Education, we're the perfect partner for businesses and job seekers alike.</p>
+            </div>
+  
+            <div class="col-md-6" id="about">
+              <h2>About us</h2>
+              <h6 class="lead text-nor"> Bridging the Gap between Businesses and Top Talent in UAE.<br></h6>
+                <p>Founded with a vision to redefine the recruitment industry, Headz Group is a premier Manpower Solutions Company. We're all about making meaningful connections — helping employers find the right talent while empowering job seekers with exciting opportunities in various. We provide HR Services, Recruiting Solutions, Manpower Solutions</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </section>
+    </div>
+  
+
+
+    <!-- <div class="image-container">
+      <img class="image-item" src="images/welcome_image.jpg" alt="welcome to headz group" />   
+    </div>
   <nav id="top-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="logo" href="https://www.headzgroup.com/" target="_parent" id="hs-link-widget_1591726593135_" style="border-width:0px;border:0px;">
       <img src="images/logo.png" class="hs-image-widget " style="width:100px;border-width:0px;border:0px;" width="200" alt="Logo_Headz" title="logo"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#jobopenings">Job Openings</a>
+          <a class="nav-link" href="#ourExpertise">Our Expertise</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contactus">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
         </li>
       </ul>
       <div class="buttons">
@@ -39,79 +128,119 @@
     </div>
   </div>
 </nav>
-  
-    <div class="image-container">
-        <img class="image-item" src="images/1600.svg" alt="try" />
-        <img class="image-item" src="images/img1.svg" alt="image1" />
-        <img class="image-item" src="images/img2.svg" alt="image2" />
-        <img class="image-item" src="images/img3.svg" alt="image3" />
-        <img class="image-item" src="images/img4.svg" alt="image4" />
-        <img class="image-item" src="images/img5.svg" alt="image5" />
-        <img class="image-item" src="images/img6.svg" alt="image6" />
-        <hr>
-    </div>
 
-    <section id="about" class="section">
-      <div class="section-content container">
+
+<div class="box">
+  <section id="welcome" class="section">
+    <div class="section-content container container-centered">
       <div class="row">
-        <div class="col-md-12">
-          <h2>About Headz Group</h2>
-          <p class="lead text-nor">Bridging the Gap between Businesses and Top Talent in UAE.
-          Founded with a vision to redefine the recruitment industry, Headz Group is a premier Manpower Solutions Company. We're all about making meaningful connections — helping employers find the right talent while empowering jobseekers with exciting opportunities in various. We provide HR Services, Recruting Solutions, Manpower Solutions</p>
+        <div class="col-md-6">
+          <h2>Welcome to <strong>Headz Group</strong></h2>
+          <p class="lead text-nor">At Headz Group, we combine our passion for people with the power of today's intelligent systems to create an innovative human-centric approach in providing HR Services, Recruiting Solutions, and Manpower Solutions. Specializing in Engineering & Construction, Hospitality, Health Care, Oil & Gas, Marine, Aviation, Banking, and Education, we're the perfect partner for businesses and job seekers alike.</p>
+        </div>
+
+        <div class="col-md-6">
+          <h3>About us</h3>
+          <p class="lead text-nor"> Bridging the Gap between Businesses and Top Talent in UAE. <br>
+            Founded with a vision to redefine the recruitment industry, Headz Group is a premier Manpower Solutions Company. We're all about making meaningful connections — helping employers find the right talent while empowering job seekers with exciting opportunities in various. We provide HR Services, Recruiting Solutions, Manpower Solutions</p>
         </div>
       </div>
-      <hr>
-    </section>
+    </div>
+    <hr>
+  </section>
+</div>
+
+  </div> -->
     
       <!-- job openings Section -->
-      <section id="jobopenings" class="container my-4">
-        <h2>Available Jobs</h2>
+      <section id="ourExpertise" class="container my-4">
+        <h3>OUR EXPERTISE</h3>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-book"></i> Electrician</h3>
-                <p class="card-text">needed Electrician</p>
+                <img src="images/Construction.jpg" alt="Construction" class="card-img-top">
+                <!-- <h3 class="card-title"><i class="fas fa-book"></i> Construction </h3> -->
+                <!-- <p class="card-text">needed Electrician</p> -->
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-file-powerpoint"></i> teacher</h3>
-                <p class="card-text">requirments</p>
+                <img src="images/Marine.jpg" alt="Marine" class="card-img-top">
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-laptop-code"></i> nurse</h3>
-                <p class="card-text">health care.</p>
+                <img src="images/Logistics.jpg" alt="Logistics" class="card-img-top">
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-laptop-code"></i>engineers</h3>
-                <p class="card-text">IT mech civil etc</p>
+                <img src="images/Oil & Gas.jpg" alt="oil & Gas" class="card-img-top">
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-laptop-code"></i> driver</h3>
-                <p class="card-text">experience</p>
+                <img src="images/Retail & Entertainment.jpg" alt="Retail & Entertainment" class="card-img-top">
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h3 class="card-title"><i class="fas fa-laptop-code"></i> chef</h3>
-                <p class="card-text">hotel management.</p>
+                <img src="images/Security.jpg" alt="Security" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/Aviation.jpg" alt="Aviation" class="card-img-top">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/Banking & Insurance.jpg" alt="Banking & Insurance" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/Engineering.jpg" alt="Engineering" class="card-img-top">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/Healthcare.jpg" alt="Healthcare" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/Hospitality.jpg" alt="Hospitality" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <img src="images/IT & Telecom.jpg" alt="IT & Telecom" class="card-img-top">
               </div>
             </div>
           </div>
